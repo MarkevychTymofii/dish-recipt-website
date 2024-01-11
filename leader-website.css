@@ -1,0 +1,155 @@
+:root{
+  --background: #EEEEEE;
+  --main: #9DC5BB;
+  --highlight: #17B890;
+}
+
+body{
+  background-color: var(--background);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.initial-width{
+  width: 960px;
+}
+
+header,
+main,
+footer{
+  display: flex;
+  justify-content: center;  
+}
+
+header{
+  box-shadow: 0px 10px 10px 1px #bebebe;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.logo{
+  height: 164px;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+}
+
+.huge-image{
+  width: 720px;
+  margin-top: 75px;
+}
+
+.dish-name{
+  margin-bottom: 0;
+  font-size: 96px;
+}
+
+.heading{
+  margin-bottom: 40px;
+  font-size: 64px;
+}
+
+.sub-title{
+  font-size: 48px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.text-box{
+  box-shadow: 0px 5px 15px 3px #bebebe;
+  border-radius: 113px;
+  padding: 20px 60px;
+  width: fit-content;
+  margin-left: 50%;
+  margin-right: 0;
+}
+
+.text-box > p{
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.text-box-heading{
+  margin-bottom: 0;
+  width: fit-content;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.text-box:nth-child(even){
+  margin-right: 50%;
+  margin-left: 0;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.copyright{
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e4e4e;
+}
+
+.logo-mini > svg{
+  height: 64px;
+}
+
+@media screen and (max-width: 960px) {
+
+  .initial-width{
+    width: 100%;
+  }
+
+  .slogan{
+    font-size: 22px;
+  }
+
+  
+  .logo > svg,
+  .logo{
+    height: 68px;
+  }
+
+  .header{
+    height: 68px;
+  }
+
+  .huge-image{
+    width: 240px;
+  }
+
+  .dish-name{
+    font-size: 48px;
+  }
+
+  .sub-title{
+    font-size: 24px;
+  }  
+
+  .text-box{
+    margin: 0 !important;
+    margin-top: 300px;
+  }
+
+  .heading{
+   font-size: 32px;
+  }
+}
